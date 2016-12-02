@@ -2,7 +2,7 @@
 # - install node deps first `docker-compose run agenda npm install`
 agenda:
   image: nodesource/jessie:4
-  command: npm test
+  stdin_open: true
   volumes:
     - ./:/usr/src/app
   environment:
