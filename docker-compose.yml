@@ -3,7 +3,6 @@
 agenda:
   image: nodesource/jessie:4
   command: tail -f /dev/null
-  stdin_open: true
   volumes:
     - ./:/usr/src/app
   environment:
