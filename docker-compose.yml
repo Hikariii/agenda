@@ -3,8 +3,8 @@
 agenda:
   image: nodesource/jessie:4
   command: tail -f /dev/null
-  volumes:
-    - ./:/usr/src/app
+  volumes_from:
+    - ${VOLUMES_FROM}
   environment:
     - MONGODB_HOST=mongodb
   links:
