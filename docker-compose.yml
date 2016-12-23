@@ -5,7 +5,7 @@ agenda:
   command: tail -f /dev/null
   volumes_from:
     - ${VOLUMES_FROM}
-  working_dir: /var/jenkins_home/workspace
+  working_dir: ${PWD}
   environment:
     - MONGODB_HOST=mongodb
   links:
