@@ -2,7 +2,7 @@
 # - install node deps first `docker-compose run agenda npm install`
 agenda:
   image: nodesource/jessie:4
-  command: npm install --dev && tail -f /dev/null
+  command: tail -f /dev/null
   volumes_from:
     - ${VOLUMES_FROM}
   volumes:
