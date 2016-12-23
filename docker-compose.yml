@@ -5,6 +5,9 @@ agenda:
   command: npm install --dev && tail -f /dev/null
   volumes_from:
     - ${VOLUMES_FROM}
+  volumes:
+    #Try to exclude directories from volume share
+    - ${PWD}/node_modules
   working_dir: ${PWD}
   environment:
     - MONGODB_HOST=mongodb
